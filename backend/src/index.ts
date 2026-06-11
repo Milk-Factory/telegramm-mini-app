@@ -100,7 +100,7 @@ app.post('/api/submit-request', async (req: Request, res: Response) => {
       }
     );
 
-    const telegramData = await telegramResponse.json();
+    const telegramData = await telegramResponse.json() as { ok: boolean; description?: string };
 
     if (!telegramData.ok) {
       return res.status(502).json({
