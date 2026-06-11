@@ -1,0 +1,94 @@
+.home {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 20px;
+}
+
+.card h3 {
+  margin: 0 0 16px 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 0 0 12px 0;
+  color: #666;
+  line-height: 1.5;
+}
+
+.user-info {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+.user-info p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.button {
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 8px;
+}
+
+.button:last-child {
+  margin-bottom: 0;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.button-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.button-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.button-secondary {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.button-secondary:hover:not(:disabled) {
+  background: #d0d0d0;
+}
+
+.message-card {
+  background: #e8f5e9;
+  border-left: 4px solid #4caf50;
+}
+
+.message-card p {
+  color: #2e7d32;
+  margin: 0;
+}
