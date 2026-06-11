@@ -7,7 +7,7 @@ dotenv.config();
 const app = express();
 
 const PORT = Number(process.env.PORT || 3000);
-const BOT_TOKEN = process.env.BOT_TOKEN;
+const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const WORK_GROUP_ID = process.env.WORK_GROUP_ID;
 const FRONTEND_URL = process.env.FRONTEND_URL || 'http://localhost:5173';
 
