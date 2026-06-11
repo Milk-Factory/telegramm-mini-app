@@ -1,6 +1,6 @@
 import { useEffect, useState, type FormEvent } from 'react';
 
-const API_URL = 'https://systems-chemistry-binary-duncan.trycloudflare.com';
+const API_URL = 'https://kolachinese.ru';
 
 type RequestType = 'Send' | 'Sale' | 'Other';
 
