@@ -23,6 +23,7 @@ services:
       - NODE_ENV=${NODE_ENV}
       - PORT=3000
       - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - WORK_GROUP_ID=${WORK_GROUP_ID}
       - ALLOWED_ORIGINS=${ALLOWED_ORIGINS}
     volumes:
       - ./backend/src:/app/src
