@@ -6,9 +6,9 @@ services:
       context: ./frontend
       dockerfile: Dockerfile
     ports:
-      - "5173:5173"
+      - "${FRONTEND_PORT}:5173"
     environment:
-      - VITE_API_URL=http://localhost:3000
+      - VITE_API_URL=${VITE_API_URL}
     volumes:
       - ./frontend/src:/app/src
     command: npm run dev
@@ -18,12 +18,12 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     ports:
-      - "3000:3000"
+      - "${BACKEND_PORT}:3000"
     environment:
-      - NODE_ENV=development
+      - NODE_ENV=${NODE_ENV}
       - PORT=3000
       - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
-      - ALLOWED_ORIGINS=http://localhost:5173
+      - ALLOWED_ORIGINS=${ALLOWED_ORIGINS}
     volumes:
       - ./backend/src:/app/src
     command: npm run dev
