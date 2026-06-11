@@ -5,8 +5,6 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: '0.0.0.0',
-    allowedHosts: [
-      'drink-performer-convertible-several.trycloudflare.com',
-    ],
+    allowedHosts: ['*', 'kolachinese.ru'],
   },
 });
